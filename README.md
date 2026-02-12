@@ -18,8 +18,6 @@ Compared to the original implementation:
 - Added threat feature maps (three-in-a-row and four-in-a-row detection)
 - Adjusted the reinforcement training pipeline for stronger evaluation
 
-This is not intended as a formal research contribution, but as an experimental and educational extension.
-
 ---
 
 ## State Representation (8 Channels)
@@ -81,22 +79,42 @@ Training follows the AlphaZero self-play loop:
 5. KL-divergence monitoring
 6. Update best model if performance improves
 
-To start training:
+### 1. Train Base Model
+
+First train the initial model:
+
+```bash
+python train.py
+```
+
+---
+
+### 2. Further Reinforcement Training
+
+Continue improving the model with reinforcement self-play:
 
 ```bash
 python reinforcement_learning.py
 ```
 
-Human vs AI:
+---
+
+### 3. Monitor Model Strength
+
+Evaluate model performance:
+
+```bash
+python test.py
+```
+
+---
+
+### 4. Human vs AI
+
+Play against the trained model:
 
 ```bash
 python human_play.py
-```
-
-Evaluation:
-
-```bash
-python evaluate.py
 ```
 
 ---
@@ -136,7 +154,7 @@ The goal is not to replace self-play learning, but to introduce lightweight indu
 
 Below is a self-play game from the currently strongest trained model.
 
-<!-- Replace the file name below with your actual GIF -->
+![test](https://github.com/user-attachments/assets/14b5e6b4-807c-4e7b-a99f-9050a02457dc)
 
 <p align="center">
   <img src="self_play_demo.gif" width="500">
