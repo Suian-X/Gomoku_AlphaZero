@@ -87,8 +87,6 @@ First train the initial model:
 python train.py
 ```
 
----
-
 ### 2. Further Reinforcement Training
 
 Continue improving the model with reinforcement self-play:
@@ -97,8 +95,6 @@ Continue improving the model with reinforcement self-play:
 python reinforcement_learning.py
 ```
 
----
-
 ### 3. Monitor Model Strength
 
 Evaluate model performance:
@@ -106,8 +102,6 @@ Evaluate model performance:
 ```bash
 python test.py
 ```
-
----
 
 ### 4. Human vs AI
 
