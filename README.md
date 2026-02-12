@@ -150,10 +150,6 @@ Below is a self-play game from the currently strongest trained model.
 
 ![test](https://github.com/user-attachments/assets/14b5e6b4-807c-4e7b-a99f-9050a02457dc)
 
-<p align="center">
-  <img src="self_play_demo.gif" width="500">
-</p>
-
 ---
 
 ## Notes
